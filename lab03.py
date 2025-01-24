@@ -34,13 +34,18 @@ for j in range(1, 21, 2):
     heroTotal = combatStrength + heroRoll
     monsterTotal = mCombatStrength + monsterRoll
 
+    print(f"\n Hero rolled{heroRoll}, Monster rolled{monsterRoll}")
+    print(f"\n Hero selected{heroWeapon}, Monster selected{monsterWeapon}")
+    print(f"\n Hero total{heroTotal}, Monster total{monsterTotal}")
+
     if heroTotal > monsterTotal:
         print("Player wins!")
     elif heroTotal < monsterTotal:
         print("Monster wins!")
     else:
-        print("Draw!")
+        print("A Draw!")
 
+print("20 rounds over. Thank you for playing!")
 
 #######Starter code below!
 if (combatStrength < 1 or combatStrength > 6):
