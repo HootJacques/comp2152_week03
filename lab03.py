@@ -34,20 +34,22 @@ for j in range(1, 21, 2):
     heroTotal = combatStrength + heroRoll
     monsterTotal = mCombatStrength + monsterRoll
 
-    print(f"\n Hero rolled{heroRoll}, Monster rolled{monsterRoll}")
-    print(f"\n Hero selected{heroWeapon}, Monster selected{monsterWeapon}")
-    print(f"\n Hero total{heroTotal}, Monster total{monsterTotal}")
+    print(f"\n Hero rolled {heroRoll}, Monster rolled {monsterRoll}")
+    print(f"\n Hero selected {heroWeapon}, Monster selected {monsterWeapon}")
+    print(f"\n Hero total {heroTotal}, Monster total {monsterTotal}")
 
     if heroTotal > monsterTotal:
-        print("Player wins!")
+        print("Player wins!\n-----------------------------")
     elif heroTotal < monsterTotal:
-        print("Monster wins!")
+        print("Monster wins!\n-----------------------------")
     else:
-        print("A Draw!")
+        print("A Draw!\n-----------------------------")
 
-print("20 rounds over. Thank you for playing!")
+    if j != 11:
+        print("20 rounds over. Thank you for playing!?")
 
 #######Starter code below!
+'''
 if (combatStrength < 1 or combatStrength > 6):
     print("Input must be an integer between 1-6")
 else:
@@ -148,3 +150,4 @@ else:
             else:
                 healthPoints -= mCombatStrength
                 print("The monster has reduced your health to: " + str(healthPoints))
+'''
